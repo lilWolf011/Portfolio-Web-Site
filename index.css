@@ -1,0 +1,299 @@
+html, body {
+    background-color: #151515;
+    margin-left: 20px;
+    margin-right: 20px;
+    scroll-behavior: smooth;
+    line-height: 1.15;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #151516;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.navbar li a {
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #232323;
+}
+
+/*HOME*/
+.home {
+    margin-top: 20px;
+    align-items: baseline;
+    color: white;
+}
+
+.home .information {
+    display: inline-block;
+}
+
+.home h3 {
+    color: #ffffffd7;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    margin-top: -41px;
+}
+
+.home article {
+    margin-top: -10px;
+    font-family: 'Indie Flower', cursive;
+    color: #999999;
+    font-size: 24px;
+}
+
+.profile {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 7px;
+    float: right;
+    border: 2px solid #FFE367;
+    width: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*What I Do*/
+.whatıdo {
+    margin-top: 50px;
+}
+
+.whatıdo  h1 {
+    text-align: center;
+}
+
+.whatıdo h3 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: #eeeeee;
+    margin-top: -25px;
+}
+
+.whatıdo p {
+    color: #999999;
+    font-family: 'Indie Flower', cursive;
+}
+
+.whatıdo .box {
+    display: flex;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #FFE367;
+}
+
+/*About Me*/
+.aboutme {
+    margin-top: 50px;
+}
+
+.aboutme h1 {  
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Caveat', cursive;
+}
+
+.aboutme p {
+    color: #C1C1C1;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+/*Contact Me*/
+.contactme {
+    margin-top: 50px;
+}
+
+.contactme h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Caveat', cursive;
+}
+
+.contactme p {
+    margin-top: -20px;
+    color: #C1C1C1;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+.contactme .icons {
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    margin: 5px;
+    margin-top: -5px;
+    margin-bottom: -20px;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: none;  
+    border-radius: 30px 30px 30px 30px;
+}
+
+.icons .fa:hover {
+    opacity: 0.7;
+}
+
+.icons .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.icons .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.icons .fa-github {
+    background: #0D1117;
+    color: white;
+}
+
+.icons .fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    color: white;
+    justify-content: center;
+    height: 0%;
+    margin-top: 50px;
+}
+
+
+#projects .fa-github {
+    font-size: 16px;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: -5px;
+    color: white;
+    background-color: #15151681;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#proje {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #232323;
+    justify-content: center;
+}
+
+.title {
+    grid-column: 1 / span 3;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+#projects h3 {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+#projects button {
+    background-color: #FFE367;
+    border: 1px solid #FFE367;
+    padding: 8px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease;
+}
+
+#projects button:hover {
+    opacity: 70%;
+    margin-top: -1px;
+}
+
+
+/*FOOTER*/
+hr {
+    width: 100%;
+    margin-top: 10px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    margin-top: 10px;
+}
+
+footer .footer-about {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .copyright {
+    text-align: right;
+    margin-left: auto;
+}
+footer .fa {
+    background: #2323236b;
+    color: white;
+}
+
+footer .fa:hover {
+    opacity: 60%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@500;600;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fuzzy+Bubbles:wght@400;700&family=Inconsolata:wght@400;500&family=Indie+Flower&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&family=Vollkorn:wght@400;500&display=swap');
