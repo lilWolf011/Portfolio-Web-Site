@@ -141,65 +141,83 @@ h1 {
 }
 
 /*Contact Me*/
-.contactme {
+.contact-me {
     margin-top: 50px;
+    color: white;
 }
 
-.contactme h1 {
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 46px;
-    font-family: 'Caveat', cursive;
-}
-
-.contactme p {
-    margin-top: -20px;
-    color: #C1C1C1;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 22px;
-    font-family: 'Permanent Marker', cursive;
+.contact-me h1, h2 {
     text-align: center;
 }
 
-.contactme .icons {
+.contact-me h2 {
+  color: #C1C1C1;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 22px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.contact-me .box {
     display: flex;
     justify-content: center;
 }
 
-.fa {
-    margin: 5px;
-    margin-top: -5px;
-    margin-bottom: -20px;
+.discord .profil {
+    background-color: #232323;
+    display: flex;
+    align-items: center;
     padding: 20px;
-    font-size: 30px;
-    text-decoration: none;  
-    border-radius: 30px 30px 30px 30px;
+    padding-left: 47px;
+    padding-right: 47px;
+    border-radius: 30px;
 }
 
-.icons .fa:hover {
-    opacity: 0.7;
+.discord #username {
+  color: #ffffffd7;
+  font-size: 16px;
+  font-family: 'Caveat', cursive;
+  margin-top: -16px;
+  font-weight: 100;
 }
 
-.icons .fa-twitter {
-    background: #55ACEE;
-    color: white;
+.discord #globalName {
+    font-weight: 500;
+    color: #FFFFFF;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
 }
 
-.icons .fa-instagram {
-    background: #125688;
-    color: white;
+.discord #activities {
+    font-family: 'Caveat', cursive;
+    margin-top: -5px;
+    font-weight: 100;
+    font-size: 12px;
 }
 
-.icons .fa-github {
-    background: #0D1117;
-    color: white;
+.discord .profil #avatar1 {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -10px;
 }
 
-.icons .fa-youtube {
-    background: #bb0000;
-    color: white;
+.discord .profil .info {
+    margin-top: -5px;
+    margin-left: 18px;
 }
+
+#discord_status {
+    position: absolute;
+    font-size: 18px;
+    margin-left: 98px;
+    margin-top : -47px;
+    border-radius: 50%;
+    border: 4px solid #232323;
+}
+
 
 /* Projects */
 #projects {
@@ -209,7 +227,7 @@ h1 {
     color: white;
     justify-content: center;
     height: 0%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
@@ -248,6 +266,7 @@ h1 {
 }
 
 #projects button {
+    cursor: pointer;
     background-color: #FFE367;
     border: 1px solid #FFE367;
     padding: 8px;
@@ -287,13 +306,20 @@ footer .copyright {
     text-align: right;
     margin-left: auto;
 }
-footer .fa {
-    background: #2323236b;
+footer .fa-brands {
+    background-color: #2323236b;
     color: white;
+    padding: 10px;
+    border-radius: 30px;
 }
 
-footer .fa:hover {
+footer .fa-brands:hover {
+    background-color: #131313;
     opacity: 60%;
+}
+
+a {
+    text-decoration: none
 }
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@500;600;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fuzzy+Bubbles:wght@400;700&family=Inconsolata:wght@400;500&family=Indie+Flower&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&family=Vollkorn:wght@400;500&display=swap');

@@ -1,15 +1,58 @@
 
 let button = document.getElementById("button"); // html_url
 let avatar = document.getElementById("avatar"); // pp otomatik değişecek
+let globalName = document.getElementById("globalName"); // textContent 
+let username = document.getElementById("username"); // textContent 
+let status = document.getElementById("discord_status"); // class içeriği değişicek
+let activities = document.getElementById("activities")// if (!activities.length == 0) {activites e yaz};
 
 const projectTemplate = document.querySelector('#proje');
 const projectContainer = document.getElementById('projects');
 
-const token = '';
-//fetch('https://api.github.com/users/VazkiiMods/repos?type=all', {
-
 document.addEventListener("DOMContentLoaded", function() {
-  // Kodunuz burada çalıştırılacak
+
+  avatar.src = "https://lanyard.rest/535117705854844940.png";
+  avatar1.src = "https://lanyard.rest/535117705854844940.png";
+
+  fetch("https://api.lanyard.rest/v1/users/535117705854844940")
+    .then(response => response.json())
+    .then(data => {
+      globalName.textContent = data.data.discord_user.global_name;
+      username.textContent = data.data.discord_user.username;
+      
+      let durum;
+      durum = data.data.discord_status;
+      if (durum === "dnd") {
+        status.classList.remove(status.classList[1]);
+        status.classList.add("fa-circle-minus");
+        status.style.color = "#f23f43";
+        status.style.backgroundColor = "#fff";
+      } else if (durum === "idle") {
+        status.classList.remove(status.classList[1]);
+        status.classList.add("fa-circle");
+        status.style.transform = "rotate(260deg)";
+        status.style.color = "#f0b232";
+        status.style.background.color = "#fff";
+      } else if (durum === "offline") {
+        status.classList.remove(status.classList[1]);
+        status.classList.add("fa-circle");
+        status.style.color = "#7f838d";
+        status.style.backgroundColor = "#fff";
+      }
+
+      let control;
+      control = data.data.activities;
+      if (!control.length == 0) {
+        activities.textContent = data.data.activities[0].name;
+        if (activities.textContent == "Spotify") {
+          activities.textContent += " Listening."; 
+        } else {
+          activities.textContent += " Playing."; 
+        }
+      }
+      console.log(data);
+    })
+  
   fetch("https://api.github.com/users/VazkiiMods/repos?type=all")
     .then(response => response.json())
     .then(data => {
@@ -21,10 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
       var firstMaxStarItem = data[0];
       var secondMaxStarItem = data[1];
       var thirdMaxStarItem = data[2];
-
-      console.log("En büyük star değerine sahip olan öğe: ", firstMaxStarItem);
-      console.log("İkinci en büyük star değerine sahip olan öğe: ", secondMaxStarItem);
-      console.log("Üçüncü en büyük star değerine sahip olan öğe: ", thirdMaxStarItem);
 
       // Orijinal öğeyi seç
       var originalItem = document.querySelector("#proje");

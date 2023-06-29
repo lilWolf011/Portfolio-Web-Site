@@ -3,7 +3,8 @@
     <head lang="utf8">
         <title>$lil Wolf</title>
         <link href="index.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2777286586197044"
      crossorigin="anonymous"></script>
     </head>
@@ -56,16 +57,25 @@
             </section>
             
             <!--CONTACTME-->
-            <section class="contactme">
-                <h1 id="contact">Contact Me</h1>
-                <p>Follow me on</p>
-                <article class="icons">
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                    <a href="#" class="fa fa-github"></a>
-                </article>
+            <section class="contact-me">
+                <h1>Contact Me</h1>
+                <h2>Contact me on Discord</h2>
+            
+                <div class="box">
+                    <article class="discord">
+                        <div class="profil">
+                            <img id="avatar1" src="" alt="avatar">
+                            <div class="info">
+                                <h3 id="globalName"></h3>
+                                <h4 id="username"></h4>
+                                <p id="activities"></p>
+                            </div>
+                        </div>
+                        <i id="discord_status" class="fa-solid fa-circle" style="color: #00ff40;"></i>
+                    </article>
+                </div>
             </section>
+            
             
             <!--PROJECTS-->
             <section id="projects">
@@ -73,7 +83,7 @@
                     <h1>Projects</h1>
                 </div>
                 <div id="proje">
-                    <p id="date" class="fa fa-github">.../.../....</p>
+                    <i id="date" class="fa-brands fa-github"></i>
                     <h3 id="projectName">Project Name</h3>
                     <p id="about">About the Project</p>
                     <button id="button" type="button">Open Project</button>
@@ -84,9 +94,9 @@
             <hr>
             <footer class="footer">
                 <div class="footer-about">
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-github"></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-discord"></i></a>
+                    <a target="_blank" href="https://github.com/lilWolf011"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a class="copyright">© lil Wolf 2022</a>
             </footer>
