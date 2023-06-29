@@ -87,6 +87,7 @@ h1 {
     width: 240px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: #ffe3671a 0px 7px 29px 0px;
 }
 
 /*What I Do*/
@@ -117,7 +118,7 @@ h1 {
     padding: 50px;
     align-items: center;
     flex-direction: column;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: #ffe3671a 0px 7px 29px 0px;
     border: 1px solid #FFE367;
 }
 
@@ -172,6 +173,8 @@ h1 {
     padding-left: 47px;
     padding-right: 47px;
     border-radius: 30px;
+    box-shadow: #ffe3671a 0px 7px 29px 0px;
+    border: 1px solid #FFE367;
 }
 
 .discord #username {
