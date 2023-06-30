@@ -26,18 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
         status.classList.remove(status.classList[1]);
         status.classList.add("fa-circle-minus");
         status.style.color = "#f23f43";
-        status.style.backgroundColor = "#fff";
+        status.style.backgroundColor = "#131416";
       } else if (durum === "idle") {
         status.classList.remove(status.classList[1]);
         status.classList.add("fa-circle");
-        status.style.transform = "rotate(260deg)";
         status.style.color = "#f0b232";
-        status.style.background.color = "#fff";
       } else if (durum === "offline") {
         status.classList.remove(status.classList[1]);
         status.classList.add("fa-circle");
         status.style.color = "#7f838d";
-        status.style.backgroundColor = "#fff";
       }
 
       let control;
@@ -73,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Birinci en büyük öğeyi ekle
       var cloneFirst = originalItem.cloneNode(true);
-      cloneFirst.querySelector("#date").textContent = firstMaxStarItem.created_at.slice(0, 10);
+      cloneFirst.querySelector("#date").textContent = "   " + firstMaxStarItem.created_at.slice(0, 10);
       cloneFirst.querySelector("#projectName").textContent = firstMaxStarItem.name;
       cloneFirst.querySelector("#about").textContent = firstMaxStarItem.description;
       cloneFirst.querySelector("#button").addEventListener("click", function() {
@@ -83,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // İkinci en büyük öğeyi ekle
       var cloneSecond = originalItem.cloneNode(true);
-      cloneSecond.querySelector("#date").textContent = secondMaxStarItem.created_at.slice(0, 10);
+      cloneSecond.querySelector("#date").textContent = "   " + secondMaxStarItem.created_at.slice(0, 10);
       cloneSecond.querySelector("#projectName").textContent = secondMaxStarItem.name;
       cloneSecond.querySelector("#about").textContent = secondMaxStarItem.description;
       cloneSecond.querySelector("#button").addEventListener("click", function() {
@@ -93,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Üçüncü en büyük öğeyi ekle
       var cloneThird = originalItem.cloneNode(true);
-      cloneThird.querySelector("#date").textContent = thirdMaxStarItem.created_at.slice(0, 10);
+      cloneThird.querySelector("#date").textContent = "   " + thirdMaxStarItem.created_at.slice(0, 10);
       cloneThird.querySelector("#projectName").textContent = thirdMaxStarItem.name;
       cloneThird.querySelector("#about").textContent = thirdMaxStarItem.description;
       cloneThird.querySelector("#button").addEventListener("click", function() {
