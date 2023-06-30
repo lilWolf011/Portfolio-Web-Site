@@ -294,7 +294,7 @@ nav.fill ul li a:after {
 .icons .fa-brands {
     transition: ease-in 0.2s;
     background-color: #232323;
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(61, 61, 61);
     color: white;
     padding: 10px;  
     border-radius: 0px 0px 15px 15px;

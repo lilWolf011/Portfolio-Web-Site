@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(data);
     })
   
-  fetch("https://api.github.com/users/VazkiiMods/repos?type=all")
+  fetch("https://api.github.com/users/lilWolf011/repos?type=all")
     .then(response => response.json())
     .then(data => {
       console.log(data);
