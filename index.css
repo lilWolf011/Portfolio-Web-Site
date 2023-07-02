@@ -419,6 +419,19 @@ a {
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
     /*Navbar 3 çizgi olcak*/
+    nav {
+        display: none;
+        overflow: hidden;
+    }
+    .profile {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #proje {
+        grid-column: 1 / span 3;
+    }
     /*Profil fotorafı ortada olcak*/
     /*.home .information kısmı ortada durcak*/
     /*Projects kısmı düzeltilecek*/
