@@ -121,7 +121,8 @@ nav.fill ul li a:after {
 }
 
 .home .information {
-    display: inline-block;
+    display: block;
+    width: 70%;
 }
 
 .home h3 {
@@ -132,11 +133,11 @@ nav.fill ul li a:after {
     margin-top: -41px;
 }
 
-.home article {
+.home p {
     margin-top: -10px;
     font-family: 'Indie Flower', cursive;
     color: #999999;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .profile {
@@ -286,15 +287,15 @@ nav.fill ul li a:after {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 131px;
+    margin-top: 143px;
     font-size: 20px;
     gap: 10px;
 }
   
 .icons .fa-brands {
     transition: ease-in 0.2s;
-    background-color: #232323;
-    border-top: 1px solid rgb(61, 61, 61);
+    background: rgb(255,227,103);
+    background: linear-gradient(180deg, rgba(255,227,103,1) 0%, rgba(35,35,35,1) 2%); 
     color: white;
     padding: 10px;  
     border-radius: 0px 0px 15px 15px;
@@ -431,6 +432,9 @@ a {
     }
     #proje {
         grid-column: 1 / span 3;
+    }
+    .home .information {
+        display: inline;
     }
     /*Profil fotorafı ortada olcak*/
     /*.home .information kısmı ortada durcak*/
