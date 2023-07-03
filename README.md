@@ -22,6 +22,5 @@ You are welcome to explore the repository and reach out to me for any inquiries 
 
 I use the Lanyard API to fetch Discord data. You can learn more about Lanyard by visiting [here](https://lanyard.org/) and clicking on the link to see their website.
 
-https://lilwolf.netlify.com
-
-![Screenshot 2023-06-30 at 22-54-28 $lil Wolf](https://github.com/lilWolf011/Portfolio-Web-Site/assets/59448133/8cd24a09-14ee-430a-91b4-c4c9b99385b4)
+[Website](https://lilwolf.netlify.com)
+![Screenshot 2023-07-03 at 13-02-35 $lil Wolf](https://github.com/lilWolf011/Portfolio-Web-Site/assets/59448133/20b15252-804a-4492-a886-824be3d0f4d5)
