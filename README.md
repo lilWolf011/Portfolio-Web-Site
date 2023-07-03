@@ -20,4 +20,6 @@ My portfolio website represents my dedication to frontend development and my pas
 
 Feel free to explore the repository and reach out to me for any inquiries or collaboration opportunities.
 
-![Screenshot 2023-06-30 at 22-54-28 $lil Wolf](https://github.com/lilWolf011/Portfolio-Web-Site/assets/59448133/8cd24a09-14ee-430a-91b4-c4c9b99385b4,(https://lilwolf.netlify.app/))
+https://lilwolf.netlify.com
+
+![Screenshot 2023-06-30 at 22-54-28 $lil Wolf](https://github.com/lilWolf011/Portfolio-Web-Site/assets/59448133/8cd24a09-14ee-430a-91b4-c4c9b99385b4)
