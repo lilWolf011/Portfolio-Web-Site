@@ -1,18 +1,17 @@
 
 let button = document.getElementById("button"); // html_url
-let avatar = document.getElementById("avatar"); // pp otomatik değişecek
 let globalName = document.getElementById("globalName"); // textContent 
 let username = document.getElementById("username"); // textContent 
 let status = document.getElementById("discord_status"); // class içeriği değişicek
 let activities = document.getElementById("activities")// if (!activities.length == 0) {activites e yaz};
+let fileType = ["jpg", "png", "gif"]; 
+  
+// for döngüsü oluştur hem png hem jpg hem gif hepsini denesin
 
 const projectTemplate = document.querySelector('#proje');
 const projectContainer = document.getElementById('projects');
 
 document.addEventListener("DOMContentLoaded", function() {
-
-  avatar.src = "https://lanyard.rest/535117705854844940.png";
-  avatar1.src = "https://lanyard.rest/535117705854844940.png";
 
   fetch("https://api.lanyard.rest/v1/users/535117705854844940")
     .then(response => response.json())
@@ -43,6 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
         activities.textContent = data.data.activities[0].name;
         if (activities.textContent == "Spotify") {
           activities.textContent += " Listening."; 
+          // Müzik Resmi
+          // Müzik Adı
+          // artist
         } else {
           activities.textContent += " Playing."; 
         }
