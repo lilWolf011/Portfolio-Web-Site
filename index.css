@@ -140,7 +140,7 @@ nav.fill ul li a:after {
     font-size: 22px;
 }
 
-.profile {
+.home .profile {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 7px;
     float: right;
@@ -207,12 +207,10 @@ nav.fill ul li a:after {
     margin-top: 50px;
     color: white;
 }
-
-.contact-me h1, h2 {
+.contact-me .center {
     text-align: center;
 }
-
-.contact-me h2 {
+.contact-me .h2 {
   color: #C1C1C1;
   padding-left: 50px;
   padding-right: 50px;
@@ -221,95 +219,194 @@ nav.fill ul li a:after {
   text-align: center;
 }
 
+/*BOX*/
 .contact-me .box {
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.box .in {
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: #232428;
+}
+.box .about {
+    background-color: #111214;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+/*PROFİLE*/
+.profile {
+    display: flex;
+}
+.profile .avatar {
+    margin-top: -105px;
+}
+.profile #avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    border: 5px #232428 solid;
+}
+.profile #discord_status {
+    position: absolute;
+    margin-left: 68px;
+    margin-top: 70px;
+    font-size: 20px;
+    border: 5px solid #232428;
+    border-radius: 50%;
+}
+.banner {
+    width: 100%;
+    height: 155px;
 }
 
-.discord .profil {
-    background-color: #232323;
+.info #globalName {
+  margin-top: 0px;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+}
+.info #username {
+  color: #ffffffd7;
+  font-size: 18px;
+  font-family: 'Caveat', cursive;
+  font-weight: 100;
+  margin-top: -18px;
+}   
+.info #activities {
+  font-family: 'Caveat', cursive;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+/*İCONS*/
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+}
+.icons section{
+    display: flex;
+    width: 26px;
+    height: 26px;
+    margin-right: 105px;
+}
+.icons img {
+    background-color: #190F22;
+    padding: 5px;
+}
+
+/*SPOTİFY*/
+.spotify {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.spotify .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: -18px;
+    margin-left: 5px;
+    font-family: 'Short Stack', cursive;
+}
+
+.spotify .info #song {
+    font-weight: 400;
+    font-size: 16px;
+}
+.spotify .info #artist {
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: -12px;
+}
+.spotify .info #album {
+    margin-top: -12px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#progressbar {
+    position: absolute;
     display: flex;
     align-items: center;
-    padding: 20px;
-    padding-left: 47px;
-    padding-right: 47px;
-    border-radius: 30px;
-    box-shadow: #ffe3671a 0px 7px 29px 0px;
-    border: 1px solid #FFE367;
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-left: 72px;
+    margin-bottom: 4px;
 }
-
-.discord #username {
-  color: #ffffffd7;
-  font-size: 16px;
-  font-family: 'Caveat', cursive;
-  margin-top: -16px;
-  font-weight: 100;
-}
-
-.discord #globalName {
-    font-weight: 500;
-    color: #FFFFFF;
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
-}
-
-.discord #activities {
-    font-family: 'Caveat', cursive;
-    margin-top: -5px;
-    font-weight: 100;
+#progressbar h4 {
     font-size: 12px;
+    font-weight: 100;
+}
+#start,
+#end {
+    flex: 0 0 50px;
+    margin: 0;
+}
+  
+#progress {
+    height: 4px;
+    border: none;
+    flex-grow: 1;
+    margin: 0px 5px 0px -23px;
+    width: 100%;
+}
+  
+#progress::-webkit-progress-value {
+    background-color: #1DB954;
+}
+  
+#progress::-webkit-progress-bar {
+    background-color: #4D4D4D;
+}
+  
+#progress::-moz-progress-bar {
+    background-color: #1DB954;
 }
 
-.discord .profil #avatar1 {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-left: -10px;
+.spotify #art_url {
+    width: 67px;
+    height: 67px;
+}
+.spotify a {
+    transition: 0.2s ease-out;
+    text-decoration: none;
+}
+.spotify #url:hover {
+    transform: rotate(5deg);
+    width: 68px;
+    height: 68px;
 }
 
-.discord .profil .info {
-    margin-top: -5px;
-    margin-left: 18px;
-}
 
-#discord_status {
-    position: absolute;
+.social {
+    display: grid;
     font-size: 18px;
-    margin-left: 98px;
-    margin-top : -47px;
-    border-radius: 50%;
-    border: 4px solid #232428;
-}
-
-
-.icons {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 143px;
-    font-size: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    font-family: 'Short Stack', cursive;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 100;
 }
-
-  
-.icons .fa-brands {
-    transition: ease-in 0.2s;
-    background: rgb(255,227,103);
-    background: linear-gradient(180deg, rgba(255,227,103,1) 0%, rgba(35,35,35,1) 2%); 
-    color: white;
-    padding: 10px;  
-    border-radius: 0px 0px 15px 15px;
+.social a {
+    font-weight: 600;
+    color: rgb(233, 233, 233);
+    border: 1px solid #80808085;
+    text-decoration: none;
+    padding: 10px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-  
-.icons .fa-brands:hover {
-    padding-top: 25px;
+.social .fa-discord {
+    font-size: 16px;
 }
-  
-.icons:hover:not(.fa-brands) .fa-brands {
-    transform: none;
-}
-/*.fa-brands:hover aşağı doğru uzasın*/
 
 /* Projects */
 #projects {
@@ -387,13 +484,11 @@ footer {
     color: white;
     margin-top: 10px;
 }
-
 footer .footer-about {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 footer .copyright {
     text-align: right;
     margin-left: auto;
@@ -405,7 +500,6 @@ footer .fa-brands {
     border-radius: 30px;
     transition: ease-in 0.3s;
 }
-
 footer .fa-brands:hover {
     background-color: #131313;
     opacity: 60%;
@@ -416,6 +510,10 @@ a {
 }
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@500;600;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fuzzy+Bubbles:wght@400;700&family=Inconsolata:wght@400;500&family=Indie+Flower&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&family=Vollkorn:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat|Roboto|Lato|Open+Sans|Raleway|Pacifico&display=swap');
+
 
 /*Responsive*/
 @media only screen and (max-width: 620px) {
@@ -425,7 +523,7 @@ a {
         display: none;
         overflow: hidden;
     }
-    .profile {
+    .home .profile {
         float: none;
         display: block;
         margin-left: auto;

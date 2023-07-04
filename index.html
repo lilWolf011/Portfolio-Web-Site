@@ -4,7 +4,7 @@
         <title>$lil Wolf</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="index.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/> YENİ -->
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2777286586197044"
      crossorigin="anonymous"></script>
@@ -57,27 +57,63 @@
             
             <!--CONTACTME-->
             <section id="contactme" class="contact-me">
-                <h1>Contact Me</h1>
-                <h2>Fallow me on</h2>
+                <h1 class="center">Contact Me</h1>
+                <h2 class="center h2">Fallow me on</h2>
             
-                <div class="box">
-                    <article class="discord">
-                        <div class="profil">
-                            <img id="avatar1" src="https://lanyard.rest/535117705854844940.jpg" alt="avatar">
-                            <div class="info">
-                                <h3 id="globalName"></h3>
-                                <h4 id="username"></h4>
-                                <p id="activities"></p>
+                <span class="box">
+                    <article>
+                        <img class="banner" src="https://media.tenor.com/7mSj4FRRZP0AAAAd/kiyotaka-ayanokoji-eyes.gif" alt="">
+                        <div class="in">
+
+                            <div class="icons">
+                                <section>
+                                    <img src="https://discordresources.com/img/hse.png" alt="">
+                                    <img src="https://discordresources.com/img/boost.png" alt="">
+                                    <img src="https://discordresources.com/img/ad.png" alt="">
+                                    <img src="https://discordresources.com/img/earlydev.png" alt="">
+                                    <img src="https://discordresources.com/img/nitro.png" alt="">
+                                </section>
                             </div>
+
+                            <div class="profile">
+                                <span class="avatar">
+                                    <img id="avatar" src="https://lanyard.rest/535117705854844940.jpg" alt="avatar">
+                                    <i id="discord_status" class="fa-solid fa-circle" style="color: #00ff40;"></i>
+                                </span>
+                            </div>
+                            
+                            <section class="about">
+                                <span class="info">
+                                    <h3 id="globalName"></h3>
+                                    <h4 id="username"></h4>
+                                    <p id="activities"></p>
+                                </span>
+                                <div class="spotify">
+                                    <a id="url" target="_blank" href=""><img id="art_url" src="" alt=""></a>
+                                    <span class="info">
+                                        <h2 id="song"></h2>
+                                        <h3 id="artist"></h3>
+                                        <h4 id="album"></h4>
+                                    </span>
+                                    <span id="progressbar">
+                                        <h4 id="start">0:00</h4>
+                                        <progress id="progress" value="" max="100"></progress>
+                                        <h4 id="end">1:00</h4>
+                                    </span>
+                                </div>
+                                <div class="social"> <!--grid-->
+                                    <a target="_blank" href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+                                    <a target="_blank" href="https://discord.com/users/535117705854844940"><i class="fa-brands fa-discord"></i> Discord</a>
+                                    <a target="_blank" href="https://github.com/lilWolf011"><i class="fa-brands fa-github"></i> Github</a>
+                                    <a target="_blank" href="https://open.spotify.com/user/aeprcnfxte6k7w5o418i29se1"><i class="fa-brands fa-spotify"></i> Spotify</a>
+                                </div>
+                            </section>
+                            <!--
+                                DİĞER SOSYAL MEDYA BAĞLANTILARINI EKLİYCEKSİN
+                            -->
                         </div>
-                        <i id="discord_status" class="fa-solid fa-circle" style="color: #00ff40;"></i>
                     </article>
-                    <section class="icons">
-                        <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a target="_blank" href="https://discord.com/users/535117705854844940"><i class="fa-brands fa-discord"></i></a>
-                        <a target="_blank" href="https://github.com/lilWolf011"><i class="fa-brands fa-github"></i></a>
-                    </section>
-                </div>
+                </span>
             </section>
             
             
@@ -102,12 +138,13 @@
                     <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
                     <a target="_blank" href="https://discord.com/users/535117705854844940"><i class="fa-brands fa-discord"></i></a>
                     <a target="_blank" href="https://github.com/lilWolf011"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://open.spotify.com/user/aeprcnfxte6k7w5o418i29se1"><i class="fa-brands fa-spotify"></i></a>
                 </div>
                 <a class="copyright">© lil Wolf 2022</a>
             </footer>
 
         </main>
-
+        <script src="https://kit.fontawesome.com/88ac42ff98.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
     </body>
 </html>
