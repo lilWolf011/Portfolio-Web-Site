@@ -261,7 +261,7 @@ nav.fill ul li a:after {
 }
 .banner {
     width: 100%;
-    height: 155px;
+    height: 165px;
 }
 
 .info #globalName {
@@ -394,10 +394,9 @@ nav.fill ul li a:after {
     font-family: 'Short Stack', cursive;
     margin-top: 10px;
     text-align: left;
-    font-weight: 100;
 }
 .social a {
-    font-weight: 600;
+    font-weight: 100;
     color: rgb(233, 233, 233);
     border: 1px solid #80808085;
     text-decoration: none;
