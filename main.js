@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch("https://api.lanyard.rest/v1/users/535117705854844940")
   .then(response => response.json())
   .then(data => {
+    console.log(data);
     globalName.textContent = data.data.discord_user.global_name;
     username.textContent = data.data.discord_user.username;
     
@@ -101,8 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
         
         }, 1000);
-        
-               
+                       
         endElement.textContent = diff;
         
       } else {
@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
       spotifyContainer.remove();
     }
   }) 
+  
   fetch("https://api.github.com/users/lilWolf011/repos?type=all")
     .then(response => response.json())
     .then(data => {
