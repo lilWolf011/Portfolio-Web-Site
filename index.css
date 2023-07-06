@@ -349,15 +349,12 @@ nav.fill ul li a:after {
     flex: 0 0 50px;
     margin: 0;
 }
-  
 #progress {
     height: 4px;
     border: none;
     flex-grow: 1;
     margin: 0px 5px 0px -23px;
-    width: 100%;
 }
-  
 #progress::-webkit-progress-value {
     background-color: #1DB954;
 }

@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function() {
         url.href = "https://open.spotify.com/track/"+data.data.spotify.track_id
         album_art_url.src = data.data.spotify.album_art_url;
         song.textContent = data.data.spotify.song;
-        if (song.textContent.length > 18) {
-          song.textContent = data.data.spotify.song.slice(0,16) + "...";
+        if (song.textContent.length > 20) {
+          song.textContent = data.data.spotify.song.slice(0,20) + "...";
         }
         artist.textContent = data.data.spotify.artist;
         album.textContent = data.data.spotify.album;
